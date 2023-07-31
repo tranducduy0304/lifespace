@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+// import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 // import { AuthContext } from "../context/authContext";
-import Logo from "../img/logo.png";
+// import Logo from "../img/logo2.jpeg";
 
 const Navbar = () => {
   // const { currentUser, logout } = useContext(AuthContext);
@@ -10,28 +10,26 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="logo">
-          <Link to="/">
-          <img src={Logo} alt="" />
-          </Link>
+          {/* <Link to="/">
+            <img src={Logo} alt="" />
+          </Link> */}
+          <h3>life<span>S</span></h3>
         </div>
         <div className="links">
           <Link className="link" to="/?cat=art">
-            <h6>ARTT</h6>
+            <h6>Home</h6>
           </Link>
           <Link className="link" to="/?cat=science">
-            <h6>SCIENCE</h6>
+            <h6>About</h6>
           </Link>
           <Link className="link" to="/?cat=technology">
-            <h6>TECHNOLOGY</h6>
+            <h6>Read</h6>
           </Link>
           <Link className="link" to="/?cat=cinema">
-            <h6>CINEMA</h6>
+            <h6>Write</h6>
           </Link>
           <Link className="link" to="/?cat=design">
-            <h6>DESIGN</h6>
-          </Link>
-          <Link className="link" to="/?cat=food">
-            <h6>FOOD</h6>
+            <h6>Products</h6>
           </Link>
           {/* <span>{currentUser?.username}</span>
           {currentUser ? (
@@ -41,12 +39,19 @@ const Navbar = () => {
               Login
             </Link>
           )} */}
-          <span className="write">
-            <Link className="link" to="/write">
-              Write
-            </Link>
-          </span>
-        </div>
+          </div>
+          <div className="account">
+            <span className="login">
+              <Link className="link" to="/login">
+                Log in
+              </Link>
+            </span>
+            <span className="signup">
+              <Link className="link" to="/signup">
+                Sign up
+              </Link>
+            </span>
+          </div>
       </div>
     </div>
   );

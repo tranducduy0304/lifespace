@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
+import theme1 from "../img/theme1.jpg"
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -55,6 +56,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className="title-header">
+        <h4>The blog</h4>
+        <h2>Writings everything you want.</h2>
+        <p>The latest industry news, technologies, and resource.</p>
+        <img className="img-header" src={ theme1 } alt="titel"/>
+      </div>
       <div className="posts">
         {posts.map((post) => (
           <div className="post" key={post.id}>

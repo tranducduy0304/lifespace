@@ -4,8 +4,9 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import Register from "./pages/Register";
+import Register from "./pages/Signup";
 import Login from "./pages/Login";
+import Singup from "./pages/Signup";
 import Write from "./pages/Write";
 import Home from "./pages/Home";
 import Single from "./pages/Single";
@@ -43,8 +44,8 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/register",
-    element: <Register />,
+    path: "/signup",
+    element: <Singup />,
   },
   {
     path: "/login",

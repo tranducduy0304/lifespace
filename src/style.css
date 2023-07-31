@@ -1,4 +1,5 @@
 .app {
+  font-family: "Roboto";
   display: flex;
   justify-content: center;
 }
@@ -15,11 +16,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #b9e7e7;
 }
 .app .container .auth h1 {
+  font-weight: 400;
   font-size: 20px;
-  color: teal;
+  color: black;
   margin-bottom: 20px;
 }
 .app .container .auth form {
@@ -38,9 +39,13 @@
 .app .container .auth form button {
   padding: 10px;
   border: none;
-  background-color: teal;
-  cursor: pointer;
+  background-color: black;
   color: white;
+}
+.app .container .auth form button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
 }
 .app .container .auth form p {
   font-size: 12px;
@@ -52,53 +57,94 @@
   text-align: center;
 }
 .app .container .navbar .container {
-  padding: 10px 0px;
+  padding: 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.app .container .navbar .container .logo img {
-  width: 120px;
+.app .container .navbar .container .logo h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.app .container .navbar .container .logo h3 span {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.429);
 }
 .app .container .navbar .container .links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 .app .container .navbar .container .links h6 {
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 15px;
 }
 .app .container .navbar .container .links span {
   cursor: pointer;
 }
-.app .container .navbar .container .links .write {
-  background-color: #b9e7e7;
-  width: 50px;
+.app .container .navbar .container .account {
+  width: 150px;
   height: 50px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
   font-weight: 300;
   border: 1px solid white;
 }
-.app .container .navbar .container .links .write:hover {
-  color: teal;
+.app .container .navbar .container .account .login {
+  font-weight: 400;
+}
+.app .container .navbar .container .account .signup {
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: -15px;
+}
+.app .container .navbar .container .account .signup:hover {
+  color: black;
   background-color: white;
-  border: 1px solid teal;
+  border: 1px solid black;
 }
 .app .container footer {
   margin-top: 100px;
   padding: 20px;
-  background-color: #b9e7e7;
+  background-image: linear-gradient(to right, #ad2828, #969e27);
+  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   font-size: 12px;
 }
-.app .container footer img {
-  height: 50px;
+.app .container .home .title-header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .container .home .title-header h4 {
+  font-size: 15px;
+  padding-bottom: -20px;
+}
+.app .container .home .title-header h2 {
+  font-size: 45px;
+  margin: 5px 0;
+}
+.app .container .home .title-header p {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.app .container .home .title-header .img-header {
+  width: 97%;
+  height: 500px;
 }
 .app .container .home .posts {
   margin-top: 50px;
